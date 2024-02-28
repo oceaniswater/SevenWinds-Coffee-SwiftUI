@@ -11,6 +11,9 @@
 		86BFCBBF2B8F9AC600F5AA5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCBBE2B8F9AC600F5AA5B /* ContentView.swift */; };
 		86BFCBC12B8F9AC700F5AA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BFCBC02B8F9AC700F5AA5B /* Assets.xcassets */; };
 		86BFCBC42B8F9AC700F5AA5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BFCBC32B8F9AC700F5AA5B /* Preview Assets.xcassets */; };
+		86BFCBCE2B8F9B8300F5AA5B /* RegistartionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCBCD2B8F9B8300F5AA5B /* RegistartionView.swift */; };
+		86BFCBD02B8F9B9900F5AA5B /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCBCF2B8F9B9900F5AA5B /* RegistrationViewModel.swift */; };
+		86BFCBD32B8FAD3B00F5AA5B /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 86BFCBD22B8FAD3B00F5AA5B /* Pow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		86BFCBBE2B8F9AC600F5AA5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86BFCBC02B8F9AC700F5AA5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86BFCBC32B8F9AC700F5AA5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86BFCBCD2B8F9B8300F5AA5B /* RegistartionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistartionView.swift; sourceTree = "<group>"; };
+		86BFCBCF2B8F9B9900F5AA5B /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BFCBD32B8FAD3B00F5AA5B /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +57,8 @@
 		86BFCBBB2B8F9AC600F5AA5B /* SevenWinds Coffee SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				86BFCBBC2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift */,
+				86BFCBCA2B8F9B4200F5AA5B /* App */,
+				86BFCBCB2B8F9B5000F5AA5B /* Modules */,
 				86BFCBBE2B8F9AC600F5AA5B /* ContentView.swift */,
 				86BFCBC02B8F9AC700F5AA5B /* Assets.xcassets */,
 				86BFCBC22B8F9AC700F5AA5B /* Preview Content */,
@@ -65,6 +72,31 @@
 				86BFCBC32B8F9AC700F5AA5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86BFCBCA2B8F9B4200F5AA5B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				86BFCBBC2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		86BFCBCB2B8F9B5000F5AA5B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				86BFCBCC2B8F9B6000F5AA5B /* Registration */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		86BFCBCC2B8F9B6000F5AA5B /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				86BFCBCF2B8F9B9900F5AA5B /* RegistrationViewModel.swift */,
+				86BFCBCD2B8F9B8300F5AA5B /* RegistartionView.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,9 @@
 			dependencies = (
 			);
 			name = "SevenWinds Coffee SwiftUI";
+			packageProductDependencies = (
+				86BFCBD22B8FAD3B00F5AA5B /* Pow */,
+			);
 			productName = "SevenWinds Coffee SwiftUI";
 			productReference = 86BFCBB92B8F9AC600F5AA5B /* SevenWinds Coffee SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 86BFCBB02B8F9AC600F5AA5B;
+			packageReferences = (
+				86BFCBD12B8FAD3B00F5AA5B /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = 86BFCBBA2B8F9AC600F5AA5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86BFCBBF2B8F9AC600F5AA5B /* ContentView.swift in Sources */,
+				86BFCBD02B8F9B9900F5AA5B /* RegistrationViewModel.swift in Sources */,
+				86BFCBCE2B8F9B8300F5AA5B /* RegistartionView.swift in Sources */,
 				86BFCBBD2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86BFCBD12B8FAD3B00F5AA5B /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86BFCBD22B8FAD3B00F5AA5B /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86BFCBD12B8FAD3B00F5AA5B /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86BFCBB12B8F9AC600F5AA5B /* Project object */;
 }

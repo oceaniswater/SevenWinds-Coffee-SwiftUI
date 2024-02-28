@@ -11,7 +11,7 @@ import SwiftUI
 struct SevenWinds_Coffee_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RegistartionView()
         }
     }
 }
