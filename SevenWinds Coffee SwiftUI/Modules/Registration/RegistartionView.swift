@@ -13,27 +13,32 @@ struct RegistartionView: View {
     
     var body: some View {
         ZStack {
-            Color(.blue)
+            Color(.purple)
                 .opacity(0.3)
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {
                 VStack(alignment: .leading) {
                     Text("Email:")
+                        .foregroundStyle(.black)
                     TextField("", text: $vm.email)
-                        .textFieldStyle(.roundedBorder)
+                        .textFieldStyle(MainTextFieldStyle())
+                        .textInputAutocapitalization(.never)
                 }
-                
                 VStack(alignment: .leading) {
                     Text("Password:")
+                        .foregroundStyle(.black)
                     SecureField("", text: $vm.password1)
-                        .textFieldStyle(.roundedBorder)
+                        .textFieldStyle(MainTextFieldStyle())
+                        .textInputAutocapitalization(.never)
                 }
                 
                 VStack(alignment: .leading) {
                     Text("Repeat password:")
-                    SecureField("", text: $vm.passwor2)
-                        .textFieldStyle(.roundedBorder)
+                        .foregroundStyle(.black)
+                    SecureField("", text: $vm.password2)
+                        .textFieldStyle(MainTextFieldStyle())
+                        .textInputAutocapitalization(.never)
                 }
                 
                 Button(action: {
@@ -55,7 +60,7 @@ struct RegistartionView: View {
                 .padding(.vertical)
                 
                 Button("Log in") {
-                    vm.isFormValid.toggle()
+                    
                 }
                 .padding(.bottom)
             }

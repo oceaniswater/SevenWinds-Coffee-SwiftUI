@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		866A86D12B90DEAB00D6058A /* MainTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866A86D02B90DEAB00D6058A /* MainTextFieldStyle.swift */; };
+		866A86D42B90E33000D6058A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866A86D32B90E33000D6058A /* String+Extensions.swift */; };
 		86BFCBBD2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCBBC2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift */; };
 		86BFCBBF2B8F9AC600F5AA5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFCBBE2B8F9AC600F5AA5B /* ContentView.swift */; };
 		86BFCBC12B8F9AC700F5AA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86BFCBC02B8F9AC700F5AA5B /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		866A86D02B90DEAB00D6058A /* MainTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextFieldStyle.swift; sourceTree = "<group>"; };
+		866A86D32B90E33000D6058A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		86BFCBB92B8F9AC600F5AA5B /* SevenWinds Coffee SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SevenWinds Coffee SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BFCBBC2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenWinds_Coffee_SwiftUIApp.swift; sourceTree = "<group>"; };
 		86BFCBBE2B8F9AC600F5AA5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		866A86CF2B90DE9100D6058A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				866A86D02B90DEAB00D6058A /* MainTextFieldStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		866A86D22B90E31C00D6058A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				866A86D32B90E33000D6058A /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		86BFCBB02B8F9AC600F5AA5B = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +77,8 @@
 		86BFCBBB2B8F9AC600F5AA5B /* SevenWinds Coffee SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				866A86D22B90E31C00D6058A /* Extensions */,
+				866A86CF2B90DE9100D6058A /* Styles */,
 				86BFCBCA2B8F9B4200F5AA5B /* App */,
 				86BFCBCB2B8F9B5000F5AA5B /* Modules */,
 				86BFCBBE2B8F9AC600F5AA5B /* ContentView.swift */,
@@ -178,6 +200,8 @@
 				86BFCBBF2B8F9AC600F5AA5B /* ContentView.swift in Sources */,
 				86BFCBD02B8F9B9900F5AA5B /* RegistrationViewModel.swift in Sources */,
 				86BFCBCE2B8F9B8300F5AA5B /* RegistartionView.swift in Sources */,
+				866A86D12B90DEAB00D6058A /* MainTextFieldStyle.swift in Sources */,
+				866A86D42B90E33000D6058A /* String+Extensions.swift in Sources */,
 				86BFCBBD2B8F9AC600F5AA5B /* SevenWinds_Coffee_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
